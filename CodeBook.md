@@ -56,6 +56,7 @@ tBodyGyroMean
 tBodyGyroJerkMean
 
 ##Data Cleaning
+First, variable names from features.txt were added to test and train data.  Next, each was merged with corresponding subject id and activity id labels.  Then, test and train data was merged into one dataset.  Next, only measurements on mean and standard deviation were kept.  Activity descriptions were added.  Finally, using melt and cast from the reshape2 library, the average values of each variable for each activity and each subject were calculated to form a new table, which was written to tidy_data_set.txt.
 
 ##Source
 License:
