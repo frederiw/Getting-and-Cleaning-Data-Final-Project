@@ -65,4 +65,4 @@ data_melt <- melt(descr_data,id=c("activity_id","activity_name","subject_id"))
 mean_data <- dcast(data_melt,activity_id + activity_name + subject_id ~ variable,mean)
 
 ##Write tidy_data_set.txt
-write.table(mean_data,"./tidy_data_set.txt",row.name=FALSE )here
+write.table(mean_data,"./tidy_data_set.txt",row.name=FALSE )
