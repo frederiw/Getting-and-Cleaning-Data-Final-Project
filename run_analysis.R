@@ -1,18 +1,18 @@
 Enter file contents #Load reshape2 package
 library(reshape2)
 
-#Pre-process data to get features label
+#Get variable (features) labels
 ##Read features.txt for column labels
 features <- read.table("features.txt")
 feature_names <-  features[,2]
 
 #Read test and train data
 # 4) Appropriately label the data set with descriptive variable names
-##Read and label columns of x_test, test data
+##Read and label columns of x_test, test data, with variable names
 testdata <- read.table("./test/X_test.txt")
 colnames(testdata) <- feature_names
 
-##Read and label columns of x_train, train data
+##Read and label columns of x_train, train data, with variable names
 traindata <- read.table("./train/X_train.txt")
 colnames(traindata) <- feature_names
 
