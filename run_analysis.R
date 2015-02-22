@@ -1,4 +1,4 @@
-Enter file contents #Load reshape2 package
+#Load reshape2 package
 library(reshape2)
 
 #Get variable (features) labels
